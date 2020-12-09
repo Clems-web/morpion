@@ -1,10 +1,7 @@
 let carre = document.getElementsByClassName("case");
-let container = document.getElementById("container");
-
 document.addEventListener('contextmenu', function (event){
     event.preventDefault();
 });
-
 for (let div of carre) {
     let player1 = "x";
     let player2 = "o";
@@ -18,5 +15,5 @@ for (let div of carre) {
                 break;
         }
     })
-};
+}
 
