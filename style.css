@@ -29,3 +29,17 @@
     font-size: 14rem;
     text-align: center;
 }
+
+@media screen and (max-width: 602px) {
+    body {
+        width: 100%;
+    }
+    #container {
+        width: 100%;
+        margin-left: 0;
+    }
+    #entete {
+        font-size: 1.5rem;
+        width: 55%;
+    }
+}
