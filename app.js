@@ -18,81 +18,85 @@ for (let div of carre) {
     let div9 = document.getElementById("div9");
 
     div.addEventListener("mouseup", function (event) {
-        if (div.innerHTML === player1) {
-            switch (event.button) {
-                case 2:
-                    alert("Tricheur !");
-                    div.innerHTML = player1;
-                    break;
-            }
-        }
-        if (div.innerHTML === player2) {
-            switch (event.button) {
-                case 0:
-                    alert("Tricheur !");
-                    div.innerHTML = player2;
-                    break;
-            }
-        }
         switch (event.button) {
             case 0:
-                div.innerHTML = player1;
+                if (div.innerHTML === "") {
+                 div.innerHTML = player1;
+                }
                 break;
             case 2:
-                div.innerHTML = player2
+                if (div.innerHTML === "") {
+                    div.innerHTML = player2;
+                }
                 break;
         }
 
         /* check si player1 a gagné*/
         if ((div1.innerHTML === player1) && (div2.innerHTML === player1) && (div3.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div4.innerHTML === player1) && (div5.innerHTML === player1) && (div6.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div7.innerHTML === player1) && (div8.innerHTML === player1) && (div9.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div1.innerHTML === player1) && (div4.innerHTML === player1) && (div7.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div2.innerHTML === player1) && (div5.innerHTML === player1) && (div8.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div3.innerHTML === player1) && (div6.innerHTML === player1) && (div9.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div1.innerHTML === player1) && (div5.innerHTML === player1) && (div9.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
         else if ((div3.innerHTML === player1) && (div5.innerHTML === player1) && (div7.innerHTML === player1)) {
             alert("Player 1 win !");
+            window.location.reload();
         }
 
         /* check si player 2 a gagné*/
         else if ((div1.innerHTML === player2) && (div2.innerHTML === player2) && (div3.innerHTML === player2)) {
-            alert("Player 2 win !");
+            alert("Player 2 win !")
+            window.location.reload();
         }
         else if ((div4.innerHTML === player2) && (div5.innerHTML === player2) && (div6.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
         else if ((div7.innerHTML === player2) && (div8.innerHTML === player2) && (div9.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
         else if ((div1.innerHTML === player2) && (div4.innerHTML === player2) && (div7.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
         else if ((div2.innerHTML === player2) && (div5.innerHTML === player2) && (div8.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
         else if ((div3.innerHTML === player2) && (div6.innerHTML === player2) && (div9.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
         else if ((div1.innerHTML === player2) && (div5.innerHTML === player2) && (div9.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
         else if ((div3.innerHTML === player2) && (div5.innerHTML === player2) && (div7.innerHTML === player2)) {
             alert("Player 2 win !");
+            window.location.reload();
         }
 
     })
